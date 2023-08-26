@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/css/main.css';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import About from './About';
 
 
 const Home = () => {
@@ -99,13 +100,13 @@ useEffect(() => {
       >
         <ul>
         <li class="hover:italic hover:text-gray-500 hover:ml-[50px] underline">
-      <Link to="About" class="Link hover:underline">about</Link>
+      <Link to={About} class="Link hover:underline">about</Link>
     </li>
     <li class="hover:italic hover:text-gray-500 hover:ml-[50px] underline">
-      <Link to="Projects" class="Link hover:underline">projects</Link>
+      <Link to="/Projects" class="Link hover:underline">projects</Link>
     </li>
     <li class="Link hover:italic hover:text-gray-500 hover:ml-[50px] underline">
-      <Link to="Contact" class="Link hover:underline">contact</Link>
+      <Link to="/Contact" class="Link hover:underline">contact</Link>
     </li>
         </ul>
       </section>
