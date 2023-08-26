@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/blessing_portfolio_deploy_gh/static/css/main.a0241bd4.css",
+    "main.js": "/blessing_portfolio_deploy_gh/static/js/main.05979f67.js",
+    "static/media/project8.png": "/blessing_portfolio_deploy_gh/static/media/project8.110cc54d484e51fdafec.png",
+    "static/media/project7.png": "/blessing_portfolio_deploy_gh/static/media/project7.313d2289e63d8a948be7.png",
+    "static/media/project4.png": "/blessing_portfolio_deploy_gh/static/media/project4.36f474b5cdd8a4373ee7.png",
+    "static/media/project3.png": "/blessing_portfolio_deploy_gh/static/media/project3.1f095a130848ef5c34c6.png",
+    "static/media/project6.png": "/blessing_portfolio_deploy_gh/static/media/project6.58b492536b33d5e65384.png",
+    "static/media/project5.png": "/blessing_portfolio_deploy_gh/static/media/project5.5d49ea67331397773087.png",
+    "static/media/project1.png": "/blessing_portfolio_deploy_gh/static/media/project1.bac757df1e580cfd92a1.png",
+    "static/media/portfolio project.png": "/blessing_portfolio_deploy_gh/static/media/portfolio project.c51bf1f8e33f07fe847a.png",
+    "static/media/project2.png": "/blessing_portfolio_deploy_gh/static/media/project2.d4aae21eb8b9de02d2c7.png",
+    "static/media/Umolo_Blessing Johnson_Resume_16-08-2023-23-07-08.pdf": "/blessing_portfolio_deploy_gh/static/media/Umolo_Blessing Johnson_Resume_16-08-2023-23-07-08.29fb2bfceadeec0ef5cd.pdf",
+    "static/media/umolo.jpeg": "/blessing_portfolio_deploy_gh/static/media/umolo.d4e6926d4ddf54cfc6e4.jpeg",
+    "static/media/githb.svg": "/blessing_portfolio_deploy_gh/static/media/githb.c52fb71ff5b277c76dc668ef36013443.svg",
+    "static/media/twitter.svg": "/blessing_portfolio_deploy_gh/static/media/twitter.80fcb2c81e8b030ba450f630143423cc.svg",
+    "static/media/linkedlin.svg": "/blessing_portfolio_deploy_gh/static/media/linkedlin.085980b737f20aa1c422ff859db46d2a.svg",
+    "index.html": "/blessing_portfolio_deploy_gh/index.html",
+    "main.a0241bd4.css.map": "/blessing_portfolio_deploy_gh/static/css/main.a0241bd4.css.map",
+    "main.05979f67.js.map": "/blessing_portfolio_deploy_gh/static/js/main.05979f67.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0241bd4.css",
+    "static/js/main.05979f67.js"
+  ]
+}
