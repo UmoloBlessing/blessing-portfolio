@@ -1,0 +1,21 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    const path = window.location.pathname;
+    if (path === '/About') {
+      window.location.replace('/blessing-portfolio/About');
+    } else {
+      window.location.replace('/blessing-portfolio');
+    }
+  </script>
+  <title>Redirecting...</title>
+</head>
+<body>
+  If you are not redirected, <a href="/">click here</a>.
+</body>
+</html>
