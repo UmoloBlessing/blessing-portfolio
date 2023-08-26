@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    const path = window.location.pathname.toLowerCase(); // Convert to lowercase for case-insensitive comparison
-    if (path === '/about') {
-      window.location.replace('/blessing-portfolio/About'); // Use absolute URL
-    } else {
-      window.location.replace('/blessing-portfolio'); // Use absolute URL
-    }
-  </script>
   <title>Redirecting...</title>
 </head>
 <body>
   If you are not redirected, <a href="/blessing-portfolio">click here</a>.
+
+  <script>
+    const path = window.location.pathname.toLowerCase();
+    if (path === '/about') {
+      window.location.href = '/blessing-portfolio/About';
+    } else {
+      window.location.href = '/blessing-portfolio';
+    }
+  </script>
 </body>
 </html>
+
+
