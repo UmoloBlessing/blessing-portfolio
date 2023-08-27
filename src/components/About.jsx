@@ -1,16 +1,14 @@
 import React from 'react';
 import '../assets/css/main.css';
 import ProfilePic from '../assets/images/umolo.jpeg'
-import File from '../assets/file/Resume.pdf' 
+import ResumePDF from '../assets/file/Resume.pdf' 
 import { Link } from 'react-router-dom';
-
-
 
 const About = () => {
 
     return (
         <div>
-    <body class="bg-accent p-8 md:flex md:gap-x-10 lg:gap-x-14 lg:px-20">
+    <body className="bg-accent p-8 md:flex md:gap-x-10 lg:gap-x-14 lg:px-20">
     <header class="writing text-[18px] py-3 md:h-[95%] md:fixed">
       <nav class="flex flex-row items-center justify-between">
         <div class="flex gap-x-14 items-center">
@@ -140,8 +138,8 @@ const About = () => {
         <div class="flex gap-5 text-sm mt-5">
           <div class="bg-black rounded-lg py-3 px-4">
             <a
-            href={File}
-            download={File}
+            download="Resume.pdf"
+            href={ResumePDF}
                            class="text-[#ece7e1]">Download Resume</a
             >
           </div>
