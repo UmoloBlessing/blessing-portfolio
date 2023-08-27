@@ -9,6 +9,14 @@ import Project5 from '../assets/images/project5.png'
 import Project6 from '../assets/images/project6.png'
 import Project7 from '../assets/images/project7.png'
 import Project8 from '../assets/images/project8.png'
+import Project9 from '../assets/images/Project9.png'
+import Project10 from '../assets/images/Project10.png'
+import Project11 from '../assets/images/Project11.png'
+import Project12 from '../assets/images/Project12.png'
+
+
+
+
 import { Link } from 'react-router-dom';
 
 
@@ -51,9 +59,109 @@ const Projects = () => {
           getting new skills everyday.
         </p>
 
-        <div class="project mt-20 px-5">
+        <div class="project mt-[20px] px-5">
+
+        <div class="item">
+            <img src={Project9} alt="" class="project1" />
+
+            <div class="left mb-10">
+              <p class="text-[15px] sm:text-xl font-[500] mt-3">Diamond Landing Page</p>
+              <div class="flex gap-5 text-sm mt-5">
+                <div class="bg-black rounded-lg py-3 px-4 text-[#ece7e1]">
+                  <a
+                    href="https://github.com/UmoloBlessing/Diamond-Landing-Page"
+                    >GITHUB REPO</a
+                  >
+                </div>
+                <div class="bg-black py-3 px-5 rounded-lg text-[#ece7e1]">
+                  <a
+                    href="https://umoloblessing.github.io/Diamond-Landing-Page/"
+                    >Demo Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
 
+          <div class="item">
+            <img src={Project10} alt="" class="project1" />
+
+            <div class="left mb-10">
+              <p class="text-[15px] sm:text-xl font-[500] mt-3">Groth Dashboard</p>
+              <div class="flex gap-5 text-sm mt-5">
+                <div class="bg-black rounded-lg py-3 px-4 text-[#ece7e1]">
+                  <a
+                    href="https://github.com/UmoloBlessing/Groth-Dashboard"
+                    >GITHUB REPO</a
+                  >
+                </div>
+                <div class="bg-black py-3 px-5 rounded-lg text-[#ece7e1]">
+                  <a
+                    href="https://umoloblessing.github.io/Groth-Dashboard/"
+                    >Demo Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src={Project11} alt="" class="project1" />
+
+            <div class="left mb-10">
+              <p class="text-[15px] sm:text-xl font-[500] mt-3">ECO-Market Project</p>
+              <div class="flex gap-5 text-sm mt-5">
+                <div class="bg-black rounded-lg py-3 px-4 text-[#ece7e1]">
+                  <a
+                    href="https://github.com/UmoloBlessing/EcoMarket-Project"
+                    >GITHUB REPO</a
+                  >
+                </div>
+                <div class="bg-black py-3 px-5 rounded-lg text-[#ece7e1]">
+                  <a
+                    href="https://umoloblessing.github.io/EcoMarket-Project/"
+                    >Demo Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src={Project12} alt="" class="project1" />
+
+            <div class="left mb-10">
+              <p class="text-[15px] sm:text-xl font-[500] mt-3">Onye Ji Cash Landing Page</p>
+              <div class="flex gap-5 text-sm mt-5">
+                <div class="bg-black rounded-lg py-3 px-4 text-[#ece7e1]">
+                  <a
+                    href="https://github.com/UmoloBlessing/Cash-landing-page"
+                    >GITHUB REPO</a
+                  >
+                </div>
+                <div class="bg-black py-3 px-5 rounded-lg text-[#ece7e1]">
+                  <a
+                    href="https://umoloblessing.github.io/Cash-landing-page/"
+                    >Demo Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+        
           <div class="item">
             <img
               src={Portfolio}
@@ -101,7 +209,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-
+          
           <div class="item">
             <img src={Project2} alt="" class="project1" />
 
