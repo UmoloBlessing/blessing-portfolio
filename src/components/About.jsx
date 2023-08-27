@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/css/main.css';
 import ProfilePic from '../assets/images/umolo.jpeg'
-import File from '../assets/file/Umolo_Blessing Johnson_Resume_16-08-2023-23-07-08.pdf' 
+import File from '../assets/file/Resume.pdf' 
 import { Link } from 'react-router-dom';
 
 
