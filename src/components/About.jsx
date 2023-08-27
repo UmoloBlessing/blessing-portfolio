@@ -64,6 +64,9 @@ const About = () => {
             technology fields.
           </p>
           <p>
+          At the moment, I am proficient in crafting and enhancing UI designs using a combination of HTML, CSS, TAILWIND CSS, JAVASCRIPT, and REACT.js. I have successfully delivered projects including dynamic landing pages, dashboards, and a variety of other applications utilizing the power of React.
+          </p>
+          <p>
             A devoted supporter of the industry who has proven his value by
             acquiring the necessary skills and who is eager to learning new ones
             in the field, especially in science and technology, and who
