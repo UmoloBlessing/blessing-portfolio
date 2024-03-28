@@ -26,7 +26,7 @@ const About = () => {
         <div class="flex gap-3 text-sm">
           <p class="">&copy;</p>
           <p>/</p>
-          <p class="md:rotate-[-180deg]">2023</p>
+          <p class="md:rotate-[-180deg]">2024</p>
         </div>
       </nav>
     </header>
@@ -45,7 +45,7 @@ const About = () => {
         </div>
         <div>
           <p class="font-[cursive] text-2xl px-1 font-semibold leading-9 md:text-3xl md:mt-5 lg:text-5xl lg:w-[80%] lg:leading-normal">
-            I'm Blessing Umolo Johnson, a frontend developer, based in Lagos,
+            I'm Blessing Umolo Johnson, a Software Engineer (frontend developer), based in Lagos,
             Nigeria.
           </p>
         </div>
