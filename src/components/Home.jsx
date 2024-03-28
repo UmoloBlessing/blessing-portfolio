@@ -69,7 +69,7 @@ useEffect(() => {
         <div class="flex gap-3 text-sm">
           <p class="">&copy;</p>
           <p>/</p>
-          <p class="md:rotate-[-180deg]">2023</p>
+          <p class="md:rotate-[-180deg]">2024</p>
         </div>
       </nav>
     </header>
@@ -81,15 +81,15 @@ useEffect(() => {
         <p id="zigzag-text" class="uppercase font-semibold tracking-wider pb-4">
           Umolo Blessing Johnson
         </p>
-        <p class="font-extralight">Frontend developer</p>
+        <p class="font-extralight">Software Engineer (FrontEnd Developer)</p>
         <p class="font-extralight">
-          Currently working as an intern at
+          Currently working as FullTime FrontEnd Developer at
           <a
             class="underline font-medium"
-            href="https://axia.africa/"
+            href="https://www.aremxyplug.com/"
             target="_blank"
             referrerpolicy="no-referrer" rel='noreferrer'
-            >Axia Africa</a
+            >AremxyPlug Business Ent, LTD.</a
           >
         </p>
       </section>

@@ -26,7 +26,7 @@ const About = () => {
         <div class="flex gap-3 text-sm">
           <p class="">&copy;</p>
           <p>/</p>
-          <p class="md:rotate-[-180deg]">2023</p>
+          <p class="md:rotate-[-180deg]">2024</p>
         </div>
       </nav>
     </header>
@@ -91,6 +91,22 @@ const About = () => {
 
         <div>
           <ul class="space-y-4">
+
+          <li class="font-400 text-2xl">
+              - AremxyPlug Limited (FullTime FrontEnd Developer)
+            </li>
+            <p class="font-light md:text-[18px]">
+              
+            </p>
+
+          <li class="font-400 text-2xl">
+              - AremxyPlug Limited (3 Months Intership program)
+            </li>
+            <p class="font-light md:text-[18px]">
+              Learnt HTML, CSS, GITHUB, TAILWINDCSS, NETLIFY, VSCODE, JAVASCAIPT, REACT JS and still
+              Learning.
+            </p>
+
             <li class="font-400 text-2xl">
               - Axia Africa
             </li>
@@ -131,10 +147,10 @@ const About = () => {
         <h2 class="font-[cursive] text-[2rem] md:text-[4rem]">SKILLS</h2>
 
         <div class="mt-5 md:text-[25px]">
-          <p>HTML / CSS / GITHUB / TAILWINCSS / NETLIFY / VSCODE / JAVASCIPT / REACT JS.</p>
+          <p>HTML / CSS / GITHUB / TAILWINCSS / NETLIFY / VSCODE / JAVASCIPT / REACT JS / Nextjs / TypeScript.</p>
           
         </div>
-
+        
         <div class="flex gap-5 text-sm mt-5">
           <div class="bg-black rounded-lg py-3 px-4">
             <a

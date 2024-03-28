@@ -28,11 +28,11 @@ const Contact = () => {
         <div class="flex gap-3 text-sm">
           <p class="">&copy;</p>
           <p>/</p>
-          <p class="md:rotate-[-180deg]">2023</p>
+          <p class="md:rotate-[-180deg]">2024</p>
         </div>
       </nav>
     </header>
-
+    
     <main class="md:px-32 lg:pl-96">
 
         <section class="hello">
