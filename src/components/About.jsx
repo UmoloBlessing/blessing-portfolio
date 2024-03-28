@@ -147,7 +147,7 @@ const About = () => {
         <h2 class="font-[cursive] text-[2rem] md:text-[4rem]">SKILLS</h2>
 
         <div class="mt-5 md:text-[25px]">
-          <p>HTML / CSS / GITHUB / TAILWINCSS / NETLIFY / VSCODE / JAVASCIPT / REACT JS / Nextjs / TypeScript.</p>
+          <p>HTML / CSS / GITHUB / TAILWINCSS / NETLIFY / VSCODE / JAVASCIPT/ TYPESCRIPT / REACT JS / NEXTJS.</p>
           
         </div>
         
