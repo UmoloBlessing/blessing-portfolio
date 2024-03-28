@@ -69,7 +69,7 @@ useEffect(() => {
         <div class="flex gap-3 text-sm">
           <p class="">&copy;</p>
           <p>/</p>
-          <p class="md:rotate-[-180deg]">2023</p>
+          <p class="md:rotate-[-180deg]">2024</p>
         </div>
       </nav>
     </header>
