@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import "../assets/css/main.css";
 import Portfolio from "../assets/images/portfolio project.png";
 import Project1 from "../assets/images/project1.png";
@@ -17,12 +17,25 @@ import Project12 from "../assets/images/Project12.png";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
+
+
+  const [currentDateTime, setCurrentDateTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentDateTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <div>
       <body class="bg-accent p-8 md:flex md:gap-x-10 lg:gap-x-14 lg:px-20">
         <header class="writing text-[18px] py-3 md:h-[95%] md:fixed">
           <nav class="flex flex-row items-center justify-between">
-            <div class="flex gap-x-14 items-center">
+            <div class="flex gap-x-4 md:gap-x-14 items-center">
               <ul class="flex gap-x-4 md:gap-x-12">
                 <li class="md:rotate-[-180deg] cursor-pointer uppercase tracking-widest font-light">
                   <Link to="/" class="hover:line-through">
@@ -30,12 +43,12 @@ const Projects = () => {
                   </Link>
                 </li>
               </ul>
-              <span class="h-10 w-[2px] md:w-[1px] md:h-32 transform rotate-[90deg] md:rotate-0 bg-font-black"></span>
+              <span class="h-5 w-[2px] md:w-[1px] md:h-32 transform rotate-[90deg] md:rotate-0 bg-font-black"></span>
             </div>
             <div class="flex gap-3 text-sm">
               <p class="">&copy;</p>
               <p>/</p>
-              <p class="md:rotate-[-180deg]">2024</p>
+              <p class="md:rotate-[-180deg]">{currentDateTime.toLocaleString()}</p>
             </div>
           </nav>
         </header>

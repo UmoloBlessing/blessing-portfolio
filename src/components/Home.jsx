@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/css/main.css';
 import { Link } from "react-router-dom";
 import { useEffect } from 'react';
+import Nav from './Nav';
 
 
 const Home = () => {
@@ -37,41 +38,12 @@ useEffect(() => {
   }, []); 
 
 
+
   return (
     <div>
     <body class="bg-accent p-4 md:flex md:gap-x-10 lg:gap-x-14">
     <header class="writing text-[30px] py-3 md:h-[95%]">
-      <nav class="flex flex-row items-center justify-between">
-        <div class="flex gap-x-14 items-center">
-          <ul class="flex gap-x-4 md:gap-x-12">
-            <li class="md:rotate-[360deg] cursor-pointer">
-              <a href="https://github.com/UmoloBlessing" target="_blank" rel='noreferrer'
-                ><i class="uil uil-github hover:text-blue-800"></i
-              ></a>
-            </li>
-            <li class="md:rotate-[360deg] cursor-pointer">
-              <a
-                href="https://www.linkedin.com/in/umolo-blessing-43634420a/"
-                target="_blank" rel='noreferrer'
-                ><i class="uil uil-linkedin hover:text-blue-800"></i
-              ></a>
-            </li>
-            <li class="md:rotate-[360deg] cursor-pointer">
-              <a href="https://twitter.com/umolo_johnson" target="_blank" rel='noreferrer'
-                ><i class="uil uil-twitter hover:text-blue-600"></i
-              ></a>
-            </li>
-          </ul>
-          <span
-            class="h-10 w-[2px] md:w-[1px] md:h-32 transform rotate-[90deg] md:rotate-0 bg-font-black"
-          ></span>
-        </div>
-        <div class="flex gap-3 text-sm">
-          <p class="">&copy;</p>
-          <p>/</p>
-          <p class="md:rotate-[-180deg]">2024</p>
-        </div>
-      </nav>
+      <Nav/>
     </header>
     <main class="xl:flex xl:justify-around xl:items-end mb-28 xl:w-full">
       <section
@@ -83,14 +55,14 @@ useEffect(() => {
         </p>
         <p class="font-extralight">Software Engineer (FrontEnd Developer)</p>
         <p class="font-extralight">
-          Currently working as FullTime FrontEnd Developer at
-          <a
+          Currently working as FreeLance FrontEnd Developer
+          {/* <a
             class="underline font-medium"
             href="https://www.aremxyplug.com/"
             target="_blank"
             referrerpolicy="no-referrer" rel='noreferrer'
             >AremxyPlug Business Ent, LTD.</a
-          >
+          > */}
         </p>
       </section>
       <section
