@@ -109,16 +109,44 @@ const About = () => {
 
             <div>
               <ul class="space-y-4">
+                <li class="font-400 text-2xl">
+                  - MAVAPAY (FrontEnd Developer Intern)
+                </li>
+                <p>
+                  Expanding expertise in API integration and bitcoin technology,
+                  with focused learning in Bitcoin development.
+                </p>
+                <p>
+                  Deepening technical skills in API integration and Bitcoin
+                  development while maintaining focus on emerging technologies
+                </p>
+                <p>
+                  Converted Figma designs into production-ready websites,
+                  maintaining design consistency and responsive functionality
+                  across devices.
+                </p>
 
-              <li class="font-400 text-2xl">
+                <li class="font-400 text-2xl">
                   - GreatSome Innovations (FrontEnd Developer (Contract))
                 </li>
                 <p class="font-light md:text-[18px]">
-                  Worked on a SchoolKit project and also a Loan website, Learnt more and got conversant with API integration. 
+                  Worked on a SchoolKit project and also a Loan website, Learnt
+                  more and got conversant with API integration.
                 </p>
-
-
-
+                <p>
+                  Collaborated with backend development team to successfully
+                  integrate RESTful APIs, ensuring seamless data flow and
+                  optimal application performance
+                </p>
+                <p>
+                  Engineered and deployed responsive web applications using
+                  Next.js and TypeScript, implementing modern best practices for
+                  type safety and code maintainability
+                </p>
+                <p>
+                  Contributed to multiple production-level projects, delivering
+                  solutions that met client requirements and project deadlines
+                </p>
 
                 <li class="font-400 text-2xl">
                   - AremxyPlug Limited (FullTime FrontEnd Developer)

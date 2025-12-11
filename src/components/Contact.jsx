@@ -16,6 +16,7 @@ const Contact = () => {
     return () => clearInterval(interval);
   }, []);
 
+  
   return (
     <div>
       <body class="bg-accent p-8 md:flex md:gap-x-10 lg:gap-x-14 lg:px-20">
