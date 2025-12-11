@@ -4,9 +4,17 @@ import Linkedlin from "../assets/images/linkedlin.svg";
 import Github from "../assets/images/githb.svg";
 import Twitter from "../assets/images/twitter.svg";
 import { Link } from "react-router-dom";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,7 +24,39 @@ const Contact = () => {
     return () => clearInterval(interval);
   }, []);
 
-  
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    const SERVICE_ID = 'service_x5828rn';
+    const TEMPLATE_ID = 'template_ndc9krf';
+    const PUBLIC_KEY = 'i6sE9oaYyxkV2N1pc';
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+      to_email: 'umoloblessing009@gmail.com'
+    }, PUBLIC_KEY)
+    .then(() => {
+      setIsSubmitted(true);
+      setIsLoading(false);
+      setFormData({ name: '', email: '', message: '' });
+    })
+    .catch((error) => {
+      console.error('Failed to send email:', error);
+      alert('Failed to send message. Please try again.');
+      setIsLoading(false);
+    });
+  };
+
   return (
     <div>
       <body class="bg-accent p-8 md:flex md:gap-x-10 lg:gap-x-14 lg:px-20">
@@ -48,48 +88,68 @@ const Contact = () => {
               Hello!!!
             </h2>
 
-            <form class="left space-y-8 font-bold">
-              <div>
-                <label for="name">Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Full Name"
-                  required
-                />
-              </div>
+            {!isSubmitted ? (
+              <form onSubmit={handleSubmit} class="left space-y-8 font-bold">
+                <div>
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
 
-              <div>
-                <label for="email">Email:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Example@email.com"
-                  required
-                />
-              </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="Example@email.com"
+                    required
+                  />
+                </div>
 
-              <div>
-                <label for="message">Message:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  cols="25"
-                  placeholder="Type your message here!!!"
-                  required
-                ></textarea>
-              </div>
+                <div>
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="25"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder="Type your message here!!!"
+                    required
+                  ></textarea>
+                </div>
 
-              <button
-                class="bg-black rounded-lg py-1 px-2 text-[#ece7e1] mt-5"
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
+                <button
+                  class="bg-black rounded-lg py-1 px-2 text-[#ece7e1] mt-5 disabled:opacity-50"
+                  type="submit"
+                  disabled={isLoading}
+                >
+                  {isLoading ? 'Sending...' : 'Submit'}
+                </button>
+              </form>
+            ) : (
+              <div class="text-center py-10">
+                <h3 class="text-3xl font-bold mb-4">Thank you for contacting me!</h3>
+                <p class="text-lg mb-6">I'll get back to you as soon as possible.</p>
+                <button
+                  onClick={() => setIsSubmitted(false)}
+                  class="bg-black rounded-lg py-2 px-4 text-[#ece7e1] hover:bg-gray-800"
+                >
+                  Send Another Message
+                </button>
+              </div>
+            )}
 
             <div class="mt-40">
               <div class="flex gap-5 justify-center hover:text-[#6C1BF0] rounded-xl py-2 px-3 underline bg-black text-[#ece7e1]">
